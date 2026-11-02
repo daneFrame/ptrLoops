@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    // TODO: Write your code here
+    // Declare and initialize the array 'data' with values {12, 24, 36, 48, 60}
+    int data[] = {12, 24, 36, 48, 60};
+    // Declare pointer 'ptr' and initialize it to point to the first element
+    int *ptr = data;
+    // Use a for loop with pointer arithmetic to traverse the array
+    for (int i = 0; i < 5; i++){
+        //printf("DEBUG: made it to for\n");
+        printf("Value: %d, Address: %p\n", *(ptr + i),(ptr + i));
+    }
+    // Reset the pointer and use pointer arithmetic to access specific elements
+    ptr = data;
+    
+    printf("Third element: %d\n", *(ptr + 2));
+    printf("Last element: %d\n", *(ptr + 4));
+
+    return 0;
+}

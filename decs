@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    // TODO: Write your code here
+    // Declare and initialize the array 'data' with values {12, 24, 36, 48, 60}
+    int data[] = {12, 24, 36, 48, 60};
+    // Declare pointer 'ptr' and initialize it to point to the first element
+    int *ptr = data;
+    // Use a for loop with pointer arithmetic to traverse the array
+    // Print each value and address, then increment the pointer
+    // Reset the pointer and use pointer arithmetic to access specific elements
+    
+    return 0;
+}
